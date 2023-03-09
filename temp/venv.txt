@@ -15,3 +15,6 @@ docker run -dp 5000:5000 flask-smorest-api
 
 2)
 docker run -dp 5000:5000 -w /app -v "/c/Users/KonuTech/PycharmProjects/flask-REST-API-course:/app" flask-smorest-api
+
+3)
+docker exec -i -t <container_name> /bin/bash
