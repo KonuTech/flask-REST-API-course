@@ -6,3 +6,12 @@ pip list
 
 > $env:FLASK_APP = "app.py"
 > flask run
+
+
+Docker Volume
+1)
+docker build -t flask-smorest-api .
+docker run -dp 5000:5000 flask-smorest-api
+
+2)
+docker run -dp 5000:5000 -w /app -v "/c/Users/KonuTech/PycharmProjects/flask-REST-API-course:/app" flask-smorest-api
