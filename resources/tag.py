@@ -47,7 +47,7 @@ class LinkTagsToItem(MethodView):
 
         try:
             db.session.add(item)
-            db.session.comit()
+            db.session.commit()
         except SQLAlchemyError:
             abort(500, message="An error occurred while inserting the tag.")
 
@@ -62,7 +62,7 @@ class LinkTagsToItem(MethodView):
 
         try:
             db.session.add(item)
-            db.session.comit()
+            db.session.commit()
         except SQLAlchemyError:
             abort(500, message="An error occurred while inserting the tag.")
 
