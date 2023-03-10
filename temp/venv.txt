@@ -9,12 +9,18 @@ pip list
 
 
 Docker Volume
+
+0)
+docker ps
+docker stop <container_name>
+
 1)
 docker build -t flask-smorest-api .
-docker run -dp 5000:5000 flask-smorest-api
+docker run -dp 5000:5000 flask-smorest-api or using Volume:
 
 2)
 docker run -dp 5000:5000 -w /app -v "/c/Users/KonuTech/PycharmProjects/flask-REST-API-course:/app" flask-smorest-api
 
 3)
 docker exec -i -t <container_name> /bin/bash
+pip list
