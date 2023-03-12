@@ -48,10 +48,5 @@ class TagAndItemSchema(Schema):
 class UserSchema(Schema):
     id = fields.Int(dump_only=True)
     username = fields.Str(required=True)
-    # mail = fields.Str(required=True)
     password = fields.Str(required=True, load_only=True)
     # password = fields.Str(required=True)  # to see hashed password
-
-
-# class UserRegisterSchema(Schema):
-#     email = fields.Str(required=True)
