@@ -24,3 +24,10 @@ docker run -dp 5000:5000 -w /app -v "/c/Users/KonuTech/PycharmProjects/flask-RES
 3)
 docker exec -i -t <container_name> /bin/bash
 pip list
+
+
+Alembic:
+
+DROP TABLE <table_name> ;
+flask db migrate
+flask db upgrade
